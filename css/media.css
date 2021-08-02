@@ -1,0 +1,133 @@
+@media(max-width: 1439px) {
+  .container {
+    max-width: 1200px;
+    width: 1200px;
+  }
+
+  .header__info__flex {
+    padding: 25px 0px;
+  }
+}
+
+@media(max-width: 1199px) {
+  .container {
+    max-width: 992px;
+    width: 992px;
+  }
+
+  .header__container__flex {
+    padding-top: 45px;
+    padding-bottom: 70px;
+  }
+
+  .header__title-button {
+    margin-top: 25px;
+  }
+}
+
+@media(max-width: 991px) {
+  header {
+    padding-top: 25px;
+  }
+
+  .container {
+    max-width: 768px;
+    width: 768px;
+
+  }
+
+  .nav__btn {
+    display: flex;
+    z-index: 100;
+  }
+
+  .navbar__collapse {
+    display: none;
+    transition: .5s;
+  }
+
+  .navbar__collapse.show {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    position: absolute;
+    top: 15px;
+    right: 0;
+    width: 100%;
+    height: auto;
+    transition: .5s;
+  }
+
+  .nav__list {
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 40px 0px;
+  }
+
+  .nav__list-link {
+    font-size: 20px;
+    line-height: 40px;
+  }
+  .headerContent{
+    transition: .5s;
+  }
+  .headerContent.hidden {
+    display: none;
+  }
+}
+
+@media(max-width: 767px) {
+  .container {
+    max-width: 576px;
+    width: 576px;
+  }
+
+  .header__container__flex {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .header__info__flex {
+    padding: 25px 15px;
+  }
+  .header__info-block-title{
+    font-size: 25px;
+  }
+  .header__info-block-more{
+    font-size: 18px;
+  }
+}
+
+@media(max-width: 575px) {
+  .container {
+    max-width: 450px;
+    width: 450px;
+  }
+  .header__title-text{
+    width: 100%;
+  }
+  .title{
+    font-size: 35px;
+  }
+  .header__title-button{
+    padding: 10.5px 60.5px;
+  }
+  .header__info__flex{
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-inline: 35px;
+  }
+  .header__info-block{
+    margin: 10px 0px;
+  }
+}
+
+@media(max-width: 450px) {
+  .container {
+    max-width: 320px;
+    width: 320px;
+  }
+}

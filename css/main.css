@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Rubik';
+}
+
+.container {
+  max-width: 1440px;
+  width: 1440px;
+  margin: 0 auto;
+  padding: 0px 30px;
+  position: relative;
+}
+
+/* ========= header start ======== */
+header {
+  padding: 45px 0px;
+  height: 100vh;
+  position: relative;
+}
+
+.nav__flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar__collapse {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.nav__list-link {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #4F5665;
+  margin: 0px 20px;
+  padding: 5px 0px;
+  position: relative;
+}
+
+.nav__list-link::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  margin: -3px 0;
+  background-color: #4F5665;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all .3s ease-in-out 0s;
+}
+
+.nav__list-link:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+.nav__login {
+  display: flex;
+  align-items: center;
+}
+
+.nav__login-buttons:first-child {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  transition: .3s;
+  color: #0B132A;
+  margin: 0px 30px 0px 0px;
+}
+
+.nav__login-buttons:first-child:hover {
+  color: #F53855;
+}
+
+.nav__login-buttons:last-child {
+  border: 1px solid #F53855;
+  border-radius: 50px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #F53855;
+  padding: 13px 45px;
+  transition: .3s;
+}
+
+.nav__login-buttons:last-child:hover {
+  color: #fff;
+  background: #F53855;
+}
+
+/* navbar cotrols span */
+.nav__btn {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  display: none;
+  position: relative;
+  transition: .5s;
+}
+.nav__btn.nav__btn.checked{
+  height: 10px;  
+}
+.nav__btn-span {
+  width: 40px;
+  height: 3px;
+  background: #000;
+  transition: .5s;
+}
+
+.nav__btn-span-closed {
+  margin: 7px 0px;
+}
+.nav__btn.checked>.nav__btn-span:first-child {
+  transform: rotate(130deg);
+}
+
+.nav__btn.checked>.nav__btn-span:last-child {
+  bottom: 0;
+  transform: rotate(230deg);
+}
+
+.nav__btn.checked>.nav__btn-span-closed {
+  display: none;
+}
+
+/* header title ======== */
+.header__container__flex {
+  padding-top: 80px;
+  padding-bottom: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.header__title-image {
+  max-width: 666px;
+}
+
+.header__title-image img {
+  width: 100%;
+}
+
+.header__title-text {
+  width: 555px;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 70px;
+  color: #0B132A;
+  margin-bottom: 20px;
+}
+
+.title span {
+  font-weight: 700;
+}
+
+.header__title-info {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  color: #4F5665;
+}
+
+.header__title-button {
+  margin-top: 50px;
+  background: #F53838;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 25px;
+  color: #FFFFFF;
+  border: 1px solid #F53838;
+  padding: 17.5px 77.5px;
+  cursor: pointer;
+  box-shadow: 5px 3px 10px 2px #f88585;
+  transition: .3s;
+}
+
+.header__title-button:hover {
+  box-shadow: 14px 12px 20px 4px #f88585;
+}
+
+/* header info */
+.header__info__flex {
+  padding: 37px 0px;
+  background: #FFFFFF;
+  border-radius: 10px;
+  -webkit-box-shadow: 8px 8px 30px 15px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 8px 8px 30px 15px rgba(34, 60, 80, 0.2);
+  box-shadow: 8px 8px 30px 15px rgba(34, 60, 80, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.header__info-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__info-block-text {
+  margin-left: 30px;
+}
+
+.header__info-block-title {
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 30px;
+  color: #0B132A;
+}
+
+.header__info-block-more {
+  font-size: 20px;
+  line-height: 30px;
+  color: #4F5665;
+}
